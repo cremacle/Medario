@@ -35,6 +35,7 @@
 		228FB4452731898B00A6D477 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AEE68244273181730007A326 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -60,7 +61,6 @@
 			children = (
 				228FB4452731898B00A6D477 /* Views */,
 				AEE68242273181730007A326 /* MedarioApp.swift */,
-				AEE68244273181730007A326 /* ContentView.swift */,
 				AEE68246273181750007A326 /* Assets.xcassets */,
 				AEE68248273181750007A326 /* Preview Content */,
 			);
