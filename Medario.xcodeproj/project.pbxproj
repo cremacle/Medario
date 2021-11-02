@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228FB4472731927500A6D477 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4462731927500A6D477 /* SignInView.swift */; };
+		228FB4492731928500A6D477 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4482731928500A6D477 /* LoginView.swift */; };
+		228FB44B273192C400A6D477 /* GameHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44A273192C400A6D477 /* GameHomePageView.swift */; };
+		228FB44D273192DE00A6D477 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44C273192DE00A6D477 /* ShopView.swift */; };
+		228FB4512731931600A6D477 /* MyPharmacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4502731931600A6D477 /* MyPharmacyView.swift */; };
+		228FB4532731932200A6D477 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4522731932200A6D477 /* UserProfileView.swift */; };
+		228FB4552731932E00A6D477 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4542731932E00A6D477 /* SettingsView.swift */; };
+		228FB4572731933900A6D477 /* ViewMedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4562731933900A6D477 /* ViewMedicationsView.swift */; };
 		AEE68243273181730007A326 /* MedarioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68242273181730007A326 /* MedarioApp.swift */; };
 		AEE68245273181730007A326 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68244273181730007A326 /* ContentView.swift */; };
 		AEE68247273181750007A326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE68246273181750007A326 /* Assets.xcassets */; };
@@ -14,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		228FB4462731927500A6D477 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		228FB4482731928500A6D477 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		228FB44A273192C400A6D477 /* GameHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHomePageView.swift; sourceTree = "<group>"; };
+		228FB44C273192DE00A6D477 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		228FB4502731931600A6D477 /* MyPharmacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPharmacyView.swift; sourceTree = "<group>"; };
+		228FB4522731932200A6D477 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		228FB4542731932E00A6D477 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		228FB4562731933900A6D477 /* ViewMedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMedicationsView.swift; sourceTree = "<group>"; };
 		AEE6823F273181730007A326 /* Medario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE68242273181730007A326 /* MedarioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedarioApp.swift; sourceTree = "<group>"; };
 		AEE68244273181730007A326 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +52,14 @@
 			isa = PBXGroup;
 			children = (
 				AEE68244273181730007A326 /* ContentView.swift */,
+				228FB4462731927500A6D477 /* SignInView.swift */,
+				228FB4482731928500A6D477 /* LoginView.swift */,
+				228FB44A273192C400A6D477 /* GameHomePageView.swift */,
+				228FB44C273192DE00A6D477 /* ShopView.swift */,
+				228FB4502731931600A6D477 /* MyPharmacyView.swift */,
+				228FB4522731932200A6D477 /* UserProfileView.swift */,
+				228FB4542731932E00A6D477 /* SettingsView.swift */,
+				228FB4562731933900A6D477 /* ViewMedicationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,8 +169,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228FB4572731933900A6D477 /* ViewMedicationsView.swift in Sources */,
+				228FB44D273192DE00A6D477 /* ShopView.swift in Sources */,
+				228FB4472731927500A6D477 /* SignInView.swift in Sources */,
 				AEE68245273181730007A326 /* ContentView.swift in Sources */,
+				228FB4552731932E00A6D477 /* SettingsView.swift in Sources */,
+				228FB4532731932200A6D477 /* UserProfileView.swift in Sources */,
+				228FB4512731931600A6D477 /* MyPharmacyView.swift in Sources */,
+				228FB4492731928500A6D477 /* LoginView.swift in Sources */,
 				AEE68243273181730007A326 /* MedarioApp.swift in Sources */,
+				228FB44B273192C400A6D477 /* GameHomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
