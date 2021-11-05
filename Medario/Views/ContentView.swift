@@ -19,7 +19,7 @@ struct ContentView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 VStack{
-                    Text("Medario").font(.system(size: 60)).padding(.bottom)
+                    Text("Medario").font(.system(size: 60)).bold().padding(.bottom)
                     Image("MedarioLogo")
                         .resizable()
                         .scaledToFill()
