@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22536D1F2735B42500EAA8E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22536D1E2735B42500EAA8E8 /* MapKit.framework */; };
+		22536D212735B42A00EAA8E8 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22536D202735B42A00EAA8E8 /* SpriteKit.framework */; };
 		228FB4472731927500A6D477 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4462731927500A6D477 /* SignInView.swift */; };
 		228FB4492731928500A6D477 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4482731928500A6D477 /* LoginView.swift */; };
 		228FB44B273192C400A6D477 /* GameHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44A273192C400A6D477 /* GameHomePageView.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22536D1E2735B42500EAA8E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		22536D202735B42A00EAA8E8 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		228FB4462731927500A6D477 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		228FB4482731928500A6D477 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		228FB44A273192C400A6D477 /* GameHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHomePageView.swift; sourceTree = "<group>"; };
@@ -42,12 +46,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22536D212735B42A00EAA8E8 /* SpriteKit.framework in Frameworks */,
+				22536D1F2735B42500EAA8E8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22536D1D2735B42500EAA8E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22536D202735B42A00EAA8E8 /* SpriteKit.framework */,
+				22536D1E2735B42500EAA8E8 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		228FB4452731898B00A6D477 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 			children = (
 				AEE68241273181730007A326 /* Medario */,
 				AEE68240273181730007A326 /* Products */,
+				22536D1D2735B42500EAA8E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
