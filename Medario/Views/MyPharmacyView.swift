@@ -21,7 +21,7 @@ struct RouteSteps : Identifiable{
 
 struct MyPharmacyView: View {
     @State var preferredPharmacy = ""
-    @State private var home = CLLocationCoordinate2D(latitude: 40.748440, longitude: -73.985664)
+    @State private var home = CLLocationCoordinate2D(latitude: 43.655500, longitude: -79.738470)
     //Coordiate default set to Sheridan College trafalger
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.655500, longitude: -79.738470), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)) //Delta stuff how much of the area to show on the map
 
@@ -35,7 +35,7 @@ struct MyPharmacyView: View {
         RouteSteps(step: "Directions")
     ]
     
-//    @State var defaultAddress = ""
+    @State var defaultAddress = ""
     
     var body: some View {
         ZStack{
@@ -45,6 +45,8 @@ struct MyPharmacyView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack{
+                Spacer()
+        
                 Text("Enter the address of your preferred pharmacy:").foregroundColor(Color.black)
                 Section{
                 TextField("Preferred Pharmacy Address", text: $preferredPharmacy).background(Color.white) .textFieldStyle(.roundedBorder) .padding(.vertical, 10)
@@ -56,13 +58,15 @@ struct MyPharmacyView: View {
                 //Display's the Map
                 Map(coordinateRegion: $region, annotationItems: annotations){
                     item in MapPin(coordinate: item.coordinate)
-                }.frame(width: 300, height: 300, alignment: .center)
+                }.frame(width: 349, height: 300, alignment: .center)
                 
-                //TODO: Add Button To View Directions of how to get to pharmacy
-//                List(routeSteps){r in Text(r.step)}
+                List(routeSteps){r in Text(r.step)}.padding(.vertical, 10)
+                    .padding(.horizontal, 16).frame(height: 200, alignment: .center)
+                Spacer()
             }
         }
     }
+    
     
     func findNewLocation(){
         let locEnterdText = preferredPharmacy
