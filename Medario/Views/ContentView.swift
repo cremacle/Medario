@@ -7,27 +7,60 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        
         NavigationView{
+
             ZStack{
+               
+                Image("Background")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
                 VStack{
-                    HStack{
-                        NavigationLink(destination: SignUpView(), label: { Text("Add user") })
-                        
-                        NavigationLink(destination: ViewMedicationsView(), label: { Text("Add user") })
-                    }
-                }
+                    Text("Medario").font(.system(size: 60)).bold().padding(.bottom)
+                    Image("MedarioLogo")
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.all).frame(width: 130, height: 130, alignment: .center).padding(15)
+                        .padding(.bottom)
+                    
+                    //TODO: Change destination to SignUpView
+                    NavigationLink(destination: MyPharmacyView()){
+                        Text("Register")
+                    }.buttonStyle(MenuButtonStyle()).frame( alignment: .topLeading)
+                    
+                    NavigationLink(destination: LoginView()){
+                        Text("Login")
+                    }.buttonStyle(MenuButtonStyle())
+                        .padding(.top)
+                
             }
         }
-        Text("Hello, world!")
-            .padding()        
+
+    }
+}
+    
+//Custom Colors
+struct CustomColor {
+    static let lightPurple = Color("LightPurple")
+    static let bluePurple = Color("BluePurple")
+    
+}
+
+//Custom Button Style
+struct MenuButtonStyle: ButtonStyle{
+    //ButtonStyle has a standard method that needs to be defined for it which is caled makeBody
+    public func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(width: 129, height: 32, alignment: .center)
+            .padding()
+            .font(.headline)
+            .background(RoundedRectangle(cornerRadius: 10).fill(CustomColor.lightPurple))
+//            .border(CustomColor.bluePurple, width: 5)
+            .buttonStyle(.bordered)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }
