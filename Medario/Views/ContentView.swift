@@ -9,6 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+        NavigationView{
+            ZStack{
+                VStack{
+                    HStack{
+                        NavigationLink(destination: SignUpView(), label: { Text("Add user") })
+                        
+                        NavigationLink(destination: ViewMedicationsView(), label: { Text("Add user") })
+                    }
+                }
+            }
+        }
         Text("Hello, world!")
             .padding()        
     }

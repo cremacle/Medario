@@ -8,8 +8,51 @@
 import SwiftUI
 
 struct ViewMedicationsView: View {
+    
+    // make an array of user models
+    @State var userModels: [UserModel] = []
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        // create navigation view
+        NavigationView {
+            VStack{
+                
+                // create list view to show users
+                List (self.userModels) { (model) in
+                    
+                    // show name, email, username and icon horizontally
+                    
+                    HStack{
+                        Text(model.name)
+                        Spacer()
+                        Text(model.email)
+                        Spacer()
+                        Text(model.username)
+                        Spacer()
+                        Text(model.icon)
+                        Spacer()
+                        Text(model.medications)
+                    }
+                    
+                }
+                
+                // create link to add medication
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: AddMedicationView(), label: { Text("Add Medication")
+                        
+                    })
+                }
+            }.padding()
+            
+            // load data in user models array
+            // SEARCH
+            .onAppear(perform : {
+                self.userModels =
+                    DB_Manager().getUsers()
+            })
+        }
     }
 }
 

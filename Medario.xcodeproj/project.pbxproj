@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		228FB4472731927500A6D477 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4462731927500A6D477 /* SignInView.swift */; };
 		228FB4492731928500A6D477 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4482731928500A6D477 /* LoginView.swift */; };
 		228FB44B273192C400A6D477 /* GameHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44A273192C400A6D477 /* GameHomePageView.swift */; };
 		228FB44D273192DE00A6D477 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44C273192DE00A6D477 /* ShopView.swift */; };
@@ -15,14 +14,19 @@
 		228FB4532731932200A6D477 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4522731932200A6D477 /* UserProfileView.swift */; };
 		228FB4552731932E00A6D477 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4542731932E00A6D477 /* SettingsView.swift */; };
 		228FB4572731933900A6D477 /* ViewMedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4562731933900A6D477 /* ViewMedicationsView.swift */; };
+		358DCE3438D36AE8A7A8E122 /* Pods_Medario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E704FA9EDAD455E55928B99 /* Pods_Medario.framework */; };
 		AEE68243273181730007A326 /* MedarioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68242273181730007A326 /* MedarioApp.swift */; };
 		AEE68245273181730007A326 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68244273181730007A326 /* ContentView.swift */; };
 		AEE68247273181750007A326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE68246273181750007A326 /* Assets.xcassets */; };
 		AEE6824A273181750007A326 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE68249273181750007A326 /* Preview Assets.xcassets */; };
+		DBC078F02734A05C0076EC1B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC078EF2734A05C0076EC1B /* UserModel.swift */; };
+		DBC078F22734A0D40076EC1B /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC078F12734A0D40076EC1B /* DB_Manager.swift */; };
+		DBC078F42734A35D0076EC1B /* AddMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC078F32734A35D0076EC1B /* AddMedicationView.swift */; };
+		DBC078F62734A98A0076EC1B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC078F52734A98A0076EC1B /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		228FB4462731927500A6D477 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		1A100522177F901FE77B9DD1 /* Pods-Medario.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medario.debug.xcconfig"; path = "Target Support Files/Pods-Medario/Pods-Medario.debug.xcconfig"; sourceTree = "<group>"; };
 		228FB4482731928500A6D477 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		228FB44A273192C400A6D477 /* GameHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHomePageView.swift; sourceTree = "<group>"; };
 		228FB44C273192DE00A6D477 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
@@ -30,11 +34,17 @@
 		228FB4522731932200A6D477 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		228FB4542731932E00A6D477 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		228FB4562731933900A6D477 /* ViewMedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMedicationsView.swift; sourceTree = "<group>"; };
+		9E704FA9EDAD455E55928B99 /* Pods_Medario.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medario.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE6823F273181730007A326 /* Medario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE68242273181730007A326 /* MedarioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedarioApp.swift; sourceTree = "<group>"; };
 		AEE68244273181730007A326 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEE68246273181750007A326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEE68249273181750007A326 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBC078EF2734A05C0076EC1B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DBC078F12734A0D40076EC1B /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
+		DBC078F32734A35D0076EC1B /* AddMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationView.swift; sourceTree = "<group>"; };
+		DBC078F52734A98A0076EC1B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FECA248BBABCF8C80EC132AD /* Pods-Medario.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medario.release.xcconfig"; path = "Target Support Files/Pods-Medario/Pods-Medario.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358DCE3438D36AE8A7A8E122 /* Pods_Medario.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				AEE68244273181730007A326 /* ContentView.swift */,
-				228FB4462731927500A6D477 /* SignInView.swift */,
 				228FB4482731928500A6D477 /* LoginView.swift */,
 				228FB44A273192C400A6D477 /* GameHomePageView.swift */,
 				228FB44C273192DE00A6D477 /* ShopView.swift */,
@@ -60,8 +70,19 @@
 				228FB4522731932200A6D477 /* UserProfileView.swift */,
 				228FB4542731932E00A6D477 /* SettingsView.swift */,
 				228FB4562731933900A6D477 /* ViewMedicationsView.swift */,
+				DBC078F32734A35D0076EC1B /* AddMedicationView.swift */,
+				DBC078F52734A98A0076EC1B /* SignUpView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6478E1E612AE04D6B1E91DB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A100522177F901FE77B9DD1 /* Pods-Medario.debug.xcconfig */,
+				FECA248BBABCF8C80EC132AD /* Pods-Medario.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		AEE68236273181730007A326 = {
@@ -69,6 +90,8 @@
 			children = (
 				AEE68241273181730007A326 /* Medario */,
 				AEE68240273181730007A326 /* Products */,
+				6478E1E612AE04D6B1E91DB6 /* Pods */,
+				CAC827BA37F30C108ED6D0CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +110,8 @@
 				AEE68242273181730007A326 /* MedarioApp.swift */,
 				AEE68246273181750007A326 /* Assets.xcassets */,
 				AEE68248273181750007A326 /* Preview Content */,
+				DBC078EF2734A05C0076EC1B /* UserModel.swift */,
+				DBC078F12734A0D40076EC1B /* DB_Manager.swift */,
 			);
 			path = Medario;
 			sourceTree = "<group>";
@@ -99,6 +124,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CAC827BA37F30C108ED6D0CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E704FA9EDAD455E55928B99 /* Pods_Medario.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEE6824D273181750007A326 /* Build configuration list for PBXNativeTarget "Medario" */;
 			buildPhases = (
+				B1001FCC30127DC00114F3A6 /* [CP] Check Pods Manifest.lock */,
 				AEE6823B273181730007A326 /* Sources */,
 				AEE6823C273181730007A326 /* Frameworks */,
 				AEE6823D273181730007A326 /* Resources */,
+				8DE4DC0F416D49AD3698D988 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +199,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8DE4DC0F416D49AD3698D988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medario/Pods-Medario-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medario/Pods-Medario-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Medario/Pods-Medario-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1001FCC30127DC00114F3A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Medario-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEE6823B273181730007A326 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -171,14 +248,17 @@
 			files = (
 				228FB4572731933900A6D477 /* ViewMedicationsView.swift in Sources */,
 				228FB44D273192DE00A6D477 /* ShopView.swift in Sources */,
-				228FB4472731927500A6D477 /* SignInView.swift in Sources */,
+				DBC078F42734A35D0076EC1B /* AddMedicationView.swift in Sources */,
+				DBC078F22734A0D40076EC1B /* DB_Manager.swift in Sources */,
 				AEE68245273181730007A326 /* ContentView.swift in Sources */,
 				228FB4552731932E00A6D477 /* SettingsView.swift in Sources */,
 				228FB4532731932200A6D477 /* UserProfileView.swift in Sources */,
 				228FB4512731931600A6D477 /* MyPharmacyView.swift in Sources */,
 				228FB4492731928500A6D477 /* LoginView.swift in Sources */,
+				DBC078F62734A98A0076EC1B /* SignUpView.swift in Sources */,
 				AEE68243273181730007A326 /* MedarioApp.swift in Sources */,
 				228FB44B273192C400A6D477 /* GameHomePageView.swift in Sources */,
+				DBC078F02734A05C0076EC1B /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +383,7 @@
 		};
 		AEE6824E273181750007A326 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A100522177F901FE77B9DD1 /* Pods-Medario.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,6 +413,7 @@
 		};
 		AEE6824F273181750007A326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECA248BBABCF8C80EC132AD /* Pods-Medario.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
