@@ -17,6 +17,8 @@ struct SignUpView: View {
     
     // ^ this info is UPDATABLE too
     
+    //Test commit, again. 
+    
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
