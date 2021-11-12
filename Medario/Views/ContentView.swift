@@ -58,8 +58,8 @@ struct MenuButtonStyle: ButtonStyle{
             .padding()
             .font(.headline)
             .background(RoundedRectangle(cornerRadius: 10).fill(CustomColor.lightPurple))
-//            .border(CustomColor.bluePurple, width: 5)
             .buttonStyle(.bordered)
+        //            .border(CustomColor.bluePurple, width: 5)
 //            .overlay(RoundedRect().stroke(Color.black, lineWidth: 2).cornerRadius(10))
             
     }
