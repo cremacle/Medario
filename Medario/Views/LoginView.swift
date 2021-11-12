@@ -20,7 +20,7 @@ struct LoginView: View {
             VStack{
                 Text("Login").font(.system(size: 30)).bold()
                 Text("Please sign in to continue").font(.system(size: 18)).bold().padding(.bottom, 60).foregroundColor(.gray)
-                
+
                 
                 TextField("Email", text: $email).frame(height: 25)
                         .textFieldStyle(.roundedBorder)
