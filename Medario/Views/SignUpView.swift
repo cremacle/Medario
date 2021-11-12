@@ -13,17 +13,32 @@ struct SignUpView: View {
     @State var username: String = ""
     @State var icon: String = ""
     @State var medications: String = ""
+    @State var pfpSelection = 0
+    let pfpOptions = ["chocolatee", "teacup"]
     // EDIT - add empty JSON object that will hold medications
     
     // ^ this info is UPDATABLE too
-    
-    //Test commit, again. 
+
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
-
         VStack{
+            Text("Sign Up")
+            Section{
+                HStack{
+                    Image(pfpOptions[pfpSelection]).resizable()
+                        .frame(width: 100, height: 100).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 2))
+                    Text("Icon chosen: ")
+                    Picker(selection: $pfpSelection, label: Text("Change Photo")) {
+                        Section(header: Text("Change Photo")){
+                        ForEach(0 ..< pfpOptions.count) { (i) in
+                            HStack {
+                                Text(self.pfpOptions[i])
+                            }.tag(i)
+                        }
+                    }}.pickerStyle(MenuPickerStyle())}
+            
             TextField("Enter name", text: $name)
                 .padding(10)
                 .background(Color(.systemPink))
@@ -63,8 +78,4 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
 }
