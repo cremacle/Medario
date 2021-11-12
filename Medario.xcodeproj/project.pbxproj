@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		22536D1F2735B42500EAA8E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22536D1E2735B42500EAA8E8 /* MapKit.framework */; };
 		22536D212735B42A00EAA8E8 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22536D202735B42A00EAA8E8 /* SpriteKit.framework */; };
-		228FB4472731927500A6D477 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4462731927500A6D477 /* SignInView.swift */; };
 		228FB4492731928500A6D477 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB4482731928500A6D477 /* LoginView.swift */; };
 		228FB44B273192C400A6D477 /* GameHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44A273192C400A6D477 /* GameHomePageView.swift */; };
 		228FB44D273192DE00A6D477 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FB44C273192DE00A6D477 /* ShopView.swift */; };
@@ -32,7 +31,6 @@
 		1A100522177F901FE77B9DD1 /* Pods-Medario.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medario.debug.xcconfig"; path = "Target Support Files/Pods-Medario/Pods-Medario.debug.xcconfig"; sourceTree = "<group>"; };
 		22536D1E2735B42500EAA8E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		22536D202735B42A00EAA8E8 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		228FB4462731927500A6D477 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		228FB4482731928500A6D477 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		228FB44A273192C400A6D477 /* GameHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHomePageView.swift; sourceTree = "<group>"; };
 		228FB44C273192DE00A6D477 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
@@ -80,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE68244273181730007A326 /* ContentView.swift */,
+				DBC078F52734A98A0076EC1B /* SignUpView.swift */,
 				228FB4482731928500A6D477 /* LoginView.swift */,
 				228FB44A273192C400A6D477 /* GameHomePageView.swift */,
 				228FB44C273192DE00A6D477 /* ShopView.swift */,
@@ -88,7 +87,6 @@
 				228FB4542731932E00A6D477 /* SettingsView.swift */,
 				228FB4562731933900A6D477 /* ViewMedicationsView.swift */,
 				DBC078F32734A35D0076EC1B /* AddMedicationView.swift */,
-				DBC078F52734A98A0076EC1B /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

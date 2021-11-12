@@ -75,14 +75,14 @@ struct SignUpView: View {
                     .cornerRadius(5)
                     .disableAutocorrection(true)
             
-            TextField("Password", text: $password).frame(height: 25)
+            SecureField("Password", text: $password).frame(height: 25)
                     .textFieldStyle(.roundedBorder)
                     .padding(.vertical, 10)
                     .padding(.horizontal, 16)
                     .cornerRadius(5)
                     .disableAutocorrection(true)
                 
-            TextField("Confirm Password", text: $confirmPassword).frame(height:25)
+            SecureField("Confirm Password", text: $confirmPassword).frame(height:25)
                     .textFieldStyle(.roundedBorder)
                     .padding(.vertical, 10)
                     .padding(.horizontal, 16)
