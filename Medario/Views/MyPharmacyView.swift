@@ -9,6 +9,8 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
+
+
 struct MyPharmacyView: View {
     @StateObject private var viewModel = ContentViewModel()
     @State var preferredPharmacy = ""
@@ -38,47 +40,47 @@ struct MyPharmacyView: View {
    
 
     var body: some View {
-        VStack{
-            Section{
+        ZStack{
+            Image("LimeGreenGradient")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack{
                 Text("Please enter your preferred pharmacy")
-                TextField("First Stop", text: $preferredPharmacy).background(Color.white) .textFieldStyle(.roundedBorder) .padding(.vertical, 10)
-                        .padding(.horizontal, 99)
-
+                TextField("Preferred Pharmacy", text: $preferredPharmacy).background(Color.white) .textFieldStyle(.roundedBorder).padding(.horizontal, 20)
+                
                 //Show Map
                 Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: annotations){
                     item in MapPin(coordinate: item.coordinate)
                 }.ignoresSafeArea().accentColor(Color(.systemPink)).frame(width: 300, height: 300, alignment: .center).onAppear{viewModel.checkIfLocationServiceIsEnabled()}.padding(.vertical, 25)
-
-                List(routeSteps){r in Text(r.step)}
-                //Save Address Button
-//                Button(action: {self.findNewLocation()}){Text("Save Pharmacy")}
-
+                
                 Button(action: {
-                    routeSteps.removeAll()
-                    let sourceLoc = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: CLLocationManager().location!.coordinate.latitude, longitude: CLLocationManager().location!.coordinate.longitude))
-                    findNewLocation(source: sourceLoc)
-                    toggleDirections = true
-                    //Display directions using the .sheet
-                }){Text("Get Directions")}.sheet(isPresented: $toggleDirections, content: {
-                            VStack(spacing: 0) {
-                                Text("Directions")
-                                        .font(.largeTitle)
-                                        .bold()
-                                        .padding()
+                   routeSteps = []
+                   toggleDirections.toggle()
+                   let sourceLoc = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: CLLocationManager().location!.coordinate.latitude, longitude: CLLocationManager().location!.coordinate.longitude))
+                   findNewLocation(source: sourceLoc)
+                   
+                   //Display directions using the .sheet
+               }){Text("Get Directions")}.sheet(isPresented: $toggleDirections, content: {
+                   VStack(spacing: 0) {
+                     Text("Directions")
+                       .font(.largeTitle)
+                       .bold()
+                       .padding()
 
-                                Divider().background(Color(UIColor.systemBlue))
+                     Divider().background(Color(UIColor.systemBlue))
+                       List(routeSteps){r in Text(r.step)}
+                     }
+               }
 
-                                List(routeSteps){r in Text(r.step)}
-                            }
-                        }
+               )
 
-                        ).frame(width: 129, height: 54, alignment: .center)
-                        .font(.headline)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.pink)).foregroundColor(Color.white)
             }
-        }
+               
 
-
+            }
+        
 
     }
 
