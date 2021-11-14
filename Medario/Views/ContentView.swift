@@ -27,7 +27,7 @@ struct ContentView: View {
                         .padding(.bottom)
                     
                     //TODO: Change destination to SignUpView
-                    NavigationLink(destination: MyPharmacyView()){
+                    NavigationLink(destination: SignUpView()){
                         Text("Register")
                     }.buttonStyle(MenuButtonStyle()).frame( alignment: .topLeading)
                     
